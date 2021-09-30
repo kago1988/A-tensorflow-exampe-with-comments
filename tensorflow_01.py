@@ -6,7 +6,7 @@ mnist = tf.keras.datasets.mnist
 x_train, x_test = x_train / 255.0, x_test / 255.0
 
 
-# Create a "model" object of the "Sequential" class. 
+# The "model" object is an instance of the "Sequential" class. 
 model = tf.keras.models.Sequential([
   tf.keras.layers.Flatten(input_shape=(28, 28)),
   tf.keras.layers.Dense(128, activation='relu'),
