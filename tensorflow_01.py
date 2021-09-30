@@ -26,6 +26,7 @@ loss_fn(y_train[:1], predictions).numpy()
 
 
 # "Compile" means we translate the problem into a language - which is closer to the hardware. 
+# 62.0% of tensorflow is written in C++ ! 
 model.compile(optimizer='adam',
               loss=loss_fn,
               metrics=['accuracy'])
