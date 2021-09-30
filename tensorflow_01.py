@@ -31,7 +31,7 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 
-# "model.fit" means: backpropagation algorithm. 
+# "model.fit" means: backpropagation algorithm. "epochs=5" means we train over the whole dataset 5 times. 
 model.fit(x_train, y_train, epochs=5)
 
 model.evaluate(x_test,  y_test, verbose=2)
