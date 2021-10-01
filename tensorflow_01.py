@@ -6,7 +6,8 @@ mnist = tf.keras.datasets.mnist
 x_train, x_test = x_train / 255.0, x_test / 255.0
 
 
-# The "model" object is an instance of the "Sequential" class. 
+# The "model" object is an instance of the "Sequential" class. Passing arguments into 
+# the "Sequential" class means we give them as arguments to the constructor of the class. 
 model = tf.keras.models.Sequential([
   tf.keras.layers.Flatten(input_shape=(28, 28)),
   tf.keras.layers.Dense(128, activation='relu'),
